@@ -10,12 +10,14 @@ const connect = function () {
   conn.on('connect', () => {
     console.log('Connected Succesfully');
     conn.write('Name: MMM');
+    // setTimeout(() => {
+    //   conn.write('Move: down');
+    // }, 1000)
   });
 
   conn.on('data', (data) => {
     console.log('Server message: ', data);
   });
-
 
   // interpret incoming data as text
   conn.setEncoding("utf8");
