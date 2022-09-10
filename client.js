@@ -2,20 +2,19 @@ const net = require("net");
 const constants = require('./constants');
 
 // establishes a connection with the game server
-const connect = function () {
+const connect = function() {
   const conn = net.createConnection({
     host: constants.IP, // IP address here,
     port: constants.PORT // PORT number here,
   });
 
+  // messages sent to server on connection
   conn.on('connect', () => {
-    console.log('Connected Succesfully');
+    console.log('Connected Succesfully \n\n How to Play:\n Ctrl+C  exit game.\n w       move up\n a       move left\n s       move down\n d       move right\n\n If you idle for 5 seconds, game over!');
     conn.write('Name: MMM');
-    // setTimeout(() => {
-    //   conn.write('Move: down');
-    // }, 1000)
   });
 
+  // capture message sent by server
   conn.on('data', (data) => {
     console.log('Server message: ', data);
   });

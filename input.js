@@ -1,13 +1,11 @@
 const { stdin } = require("process");
 
-const handleUserInput = function () {
-  // your code here
-  // stdin.setRawMode(true);
-  // stdin.setEncoding('utf8');
+const handleUserInput = function() {
 
   process.stdin.on('data', (data) => {
     
     if (data === '\u0003') {
+      console.log('Closing connection');
       process.exit();
     } else if (data === 'w') {
       connection.write('Move: up');
@@ -18,18 +16,19 @@ const handleUserInput = function () {
     } else if (data === 'd') {
       connection.write('Move: right');
     } else if (data === '1') {
-      connection.write('Say: Hi friend');
+      connection.write('Say: Hi friend, glhf!');
     } else if (data === '2') {
-      connection.write('Say: Hola mi enemy');
+      connection.write('Say: Hola mi enemy!');
     } else if (data === '3') {
-      connection.write('Say: Time to win!');
-    } 
+      connection.write('Say: I\'m the longest!');
+    }
   });
 };
 
+//declare connection to utilize conn object
 let connection;
 
-const setupInput = function (conn) {
+const setupInput = function(conn) {
   connection = conn;
   const stdin = process.stdin;
   stdin.setRawMode(true);

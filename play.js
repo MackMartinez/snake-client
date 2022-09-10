@@ -1,11 +1,6 @@
-const net = require("net");
-const { stdin } = require("process");
 const connect = require('./client');
 const setupInput = require('./input');
 
 console.log("Connecting ...");
-// connect();
-
-// setupInput(conn);
-
-setupInput(connect());
+const conn = connect();
+setupInput(conn);
