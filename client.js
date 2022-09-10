@@ -10,7 +10,7 @@ const connect = function() {
 
   // messages sent to server on connection
   conn.on('connect', () => {
-    console.log('Connected Succesfully \n How to Play:\n Ctrl+C  exit game.\n w       move up\n a       move left\n s       move down\n d       move right\n 1       Say: Hi friend, glhf!\n 2       Say: Hola mi enemy\n 3       Say: I\'m Snake boss!\n\n If you idle for 5seconds, game over!');
+    console.log('Connected Succesfully \n How to Play:\n Ctrl+C  exit game.\n w       move up\n a       move left\n s       move down\n d       move right\n 1       Say: Hi friend, glhf!\n 2       Say: Hola mi enemy\n 3       Say: I\'m Snake boss!\n\n If you idle for 5 seconds, game over!');
     conn.write('Name: MMM');
   });
 

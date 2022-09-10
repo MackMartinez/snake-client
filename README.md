@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-![snake-client/SnakeGame.PNG](#)
-![snake-client/SnakeInstructions.PNG](#)
+![GameImage](/snake-client/SnakeGame.PNG)
+![ControlsImage](/snake-client/SnakeGame.PNG)
 
 
 ## Getting Started
