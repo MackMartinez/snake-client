@@ -20,7 +20,7 @@ const handleUserInput = function() {
     } else if (data === '2') {
       connection.write('Say: Hola mi enemy!');
     } else if (data === '3') {
-      connection.write('Say: I\'m the longest!');
+      connection.write('Say: I\'m Snake boss!');
     }
   });
 };
