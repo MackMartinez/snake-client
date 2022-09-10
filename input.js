@@ -17,7 +17,13 @@ const handleUserInput = function () {
       connection.write('Move: down');
     } else if (data === 'd') {
       connection.write('Move: right');
-    }
+    } else if (data === '1') {
+      connection.write('Say: Hi friend');
+    } else if (data === '2') {
+      connection.write('Say: Hola mi enemy');
+    } else if (data === '3') {
+      connection.write('Say: Time to win!');
+    } 
   });
 };
 
