@@ -8,8 +8,8 @@ Before you can run this client, you will need to be running the server side whic
 
 ## Final Product
 
-!["/home/labber/lighthouse/snake-client/SnakeInstructions.PNG"](#)
-!["/home/labber/lighthouse/snake-client/SnakeGame.PNG"](#)
+!["/SnakeGame.PNG"](#)
+!["/SnakeInstructions.PNG"](#)
 
 
 ## Getting Started
