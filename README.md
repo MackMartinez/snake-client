@@ -9,6 +9,7 @@ Before you can run this client, you will need to be running the server side whic
 ## Final Product
 
 ![GameImage](/SnakeGame.PNG)
+
 ![ControlsImage](/SnakeInstructions.PNG)
 
 
